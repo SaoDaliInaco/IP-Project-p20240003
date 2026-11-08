@@ -1,0 +1,258 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "customer@flower.test",
+      "password": "customer123",
+      "fullName": "Sokha Chan",
+      "role": "CUSTOMER",
+      "createdAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "email": "admin@flower.test",
+      "password": "admin123",
+      "fullName": "Shop Admin",
+      "role": "ADMIN",
+      "createdAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "email": "dalyinacosao@gmail.com",
+      "password": "iLoveflower123",
+      "fullName": "Dalyinaco Sao",
+      "role": "CUSTOMER",
+      "createdAt": "2026-11-02T01:30:48.133Z",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Blush Garden Bouquet",
+      "description": "A soft hand-tied bouquet of pink roses, ranunculus and baby's breath.",
+      "price": 24,
+      "category": "BOUQUET",
+      "imageUrl": "",
+      "materials": [
+        "Pink roses",
+        "Ranunculus",
+        "Baby's breath",
+        "Kraft wrap"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 2,
+      "name": "Petal Cloud Bouquet",
+      "description": "Airy pastel peonies and lisianthus wrapped like a little cloud.",
+      "price": 32,
+      "category": "BOUQUET",
+      "imageUrl": "",
+      "materials": [
+        "Peonies",
+        "Lisianthus",
+        "Eucalyptus",
+        "Tissue wrap"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 3,
+      "name": "Sunrise Tulip Bunch",
+      "description": "Ten tulips in warm peach and coral tones, tied with natural twine.",
+      "price": 18.5,
+      "category": "BOUQUET",
+      "imageUrl": "",
+      "materials": [
+        "Tulips x10",
+        "Twine",
+        "Paper wrap"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 4,
+      "name": "Lotus Offering Set",
+      "description": "Fresh lotus buds with jasmine garlands, popular for pagoda visits.",
+      "price": 15,
+      "category": "BOUQUET",
+      "imageUrl": "",
+      "materials": [
+        "Lotus buds",
+        "Jasmine garland",
+        "Banana leaf"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 5,
+      "name": "Everlasting Dried Bouquet",
+      "description": "Handmade dried flowers that last for months, in rose and cream.",
+      "price": 28,
+      "category": "BOUQUET",
+      "imageUrl": "",
+      "materials": [
+        "Dried roses",
+        "Pampas grass",
+        "Cotton wrap"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 6,
+      "name": "Single Rose Stem",
+      "description": "One long-stem rose, hand-wrapped.",
+      "price": 3,
+      "category": "SINGLE_STEM",
+      "imageUrl": "",
+      "materials": [
+        "Rose stem"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 7,
+      "name": "Single Gerbera",
+      "description": "A cheerful gerbera daisy stem.",
+      "price": 2,
+      "category": "SINGLE_STEM",
+      "imageUrl": "",
+      "materials": [
+        "Gerbera stem"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 8,
+      "name": "Single Lily Stem",
+      "description": "A fragrant white lily with buds.",
+      "price": 4.5,
+      "category": "SINGLE_STEM",
+      "imageUrl": "",
+      "materials": [
+        "Lily stem"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 9,
+      "name": "Satin Ribbon Roll",
+      "description": "Satin ribbon, tied by hand into a bow.",
+      "price": 1.5,
+      "category": "ADD_ON",
+      "imageUrl": "",
+      "materials": [
+        "Satin ribbon"
+      ],
+      "isAvailable": true
+    },
+    {
+      "id": 10,
+      "name": "Mini Vase Gift Box",
+      "description": "A small glass vase boxed with your bouquet.",
+      "price": 6,
+      "category": "ADD_ON",
+      "imageUrl": "",
+      "materials": [
+        "Glass vase",
+        "Gift box"
+      ],
+      "isAvailable": true
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "status": "COMPLETED",
+      "deliveryMethod": "PICKUP",
+      "scheduledTime": "2026-11-02T10:00",
+      "totalPrice": 26.5,
+      "createdAt": "2026-10-28T09:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "status": "COMPLETED",
+      "deliveryMethod": "DELIVERY",
+      "scheduledTime": "2026-10-20T15:00",
+      "totalPrice": 33,
+      "createdAt": "2026-10-18T11:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "status": "COMPLETED",
+      "deliveryMethod": "PICKUP",
+      "scheduledTime": "2026-11-01T09:00",
+      "totalPrice": 19.5,
+      "createdAt": "2026-10-29T07:10:00.000Z"
+    },
+    {
+      "userId": 2,
+      "deliveryMethod": "DELIVERY",
+      "scheduledTime": "2026-11-19T08:23",
+      "totalPrice": 31.5,
+      "status": "PENDING",
+      "createdAt": "2026-11-02T01:23:38.732Z",
+      "id": 4
+    }
+  ],
+  "orderItems": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "unitPrice": 26.5,
+      "wrappingColor": "Blush",
+      "ribbonColor": "White",
+      "cardType": "STANDARD",
+      "customNote": "Happy birthday, Mom!"
+    },
+    {
+      "id": 2,
+      "orderId": 2,
+      "productId": 2,
+      "quantity": 1,
+      "unitPrice": 33,
+      "wrappingColor": "Cream",
+      "ribbonColor": "Pink",
+      "cardType": "NONE",
+      "customNote": ""
+    },
+    {
+      "id": 3,
+      "orderId": 3,
+      "productId": 3,
+      "quantity": 1,
+      "unitPrice": 19.5,
+      "wrappingColor": "Kraft",
+      "ribbonColor": "Pink",
+      "cardType": "STANDARD",
+      "customNote": "Congratulations!"
+    },
+    {
+      "productId": 10,
+      "quantity": 1,
+      "unitPrice": 6,
+      "wrappingColor": "-",
+      "ribbonColor": "-",
+      "cardType": "NONE",
+      "customNote": "",
+      "orderId": 4,
+      "id": 4
+    },
+    {
+      "productId": 1,
+      "quantity": 1,
+      "unitPrice": 25.5,
+      "wrappingColor": "Blush",
+      "ribbonColor": "Pink",
+      "cardType": "NONE",
+      "customNote": "",
+      "orderId": 4,
+      "id": 5
+    }
+  ]
+}

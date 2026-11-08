@@ -1,0 +1,14 @@
+# PostgreSQL for the NestJS/Prisma API (used from week 7). Not needed for M1.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: flower
+      POSTGRES_PASSWORD: flower
+      POSTGRES_DB: flower_shop
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
