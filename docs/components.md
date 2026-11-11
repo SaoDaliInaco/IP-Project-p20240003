@@ -20,7 +20,8 @@ App
 
 | Component | Props | Events | Owns |
 |---|---|---|---|
-| `AsyncState` | `status`, `error`, `isEmpty`, `emptyText?` | `retry` | nothing (renders loading / error / empty / default slot) |
+| `AsyncState` | `status`, `error`, `isEmpty`, `emptyText?`, `skeleton?`, `skeletonRows?` | `retry` | one local flag, `slow` (true after 250 ms of loading); renders loading / error / empty / default slot |
+| `LoadingState` | `variant?` (`cards`, `list`, `none`), `rows?` | – | nothing (loading page: message plus placeholder cards, shown only when the network is slow) |
 | `ProductCard` | `product` | – (it is a `RouterLink`) | nothing |
 | `OrderCard` | `order`, `nameOf` | – | nothing (slot for admin actions) |
 | `AppHeader` | – | – | nothing (reads stores) |

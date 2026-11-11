@@ -33,6 +33,7 @@ onMounted(() => {
       <RouterLink :to="{ name: 'products' }">Shop all</RouterLink>
     </div>
     <AsyncState
+      :skeleton-rows="1"
       :status="store.status"
       :error="store.error"
       :is-empty="featured.length === 0"

@@ -76,6 +76,7 @@ function addToCart() {
 <template>
   <RouterLink :to="{ name: 'products' }" class="back">← Back to shop</RouterLink>
   <AsyncState
+    skeleton="none"
     :status="status"
     :error="error"
     :is-empty="!product"

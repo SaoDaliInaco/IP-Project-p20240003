@@ -25,6 +25,7 @@ onMounted(load)
 <template>
   <h1>My orders</h1>
   <AsyncState
+    skeleton="list"
     :status="status"
     :error="error"
     :is-empty="orders.length === 0"

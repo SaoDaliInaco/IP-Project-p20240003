@@ -39,6 +39,7 @@ async function advance(id: number, next: OrderStatus) {
   <h1>Manage orders</h1>
   <p v-if="actionError" class="error" role="alert">{{ actionError }}</p>
   <AsyncState
+    skeleton="list"
     :status="status"
     :error="error"
     :is-empty="orders.length === 0"
